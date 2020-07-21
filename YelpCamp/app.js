@@ -16,7 +16,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 //seedDB();
-mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true , useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://ravisharma:ravisharma@cluster0.5ymy8.mongodb.net/ravisharma?retryWrites=true&w=majority", { useNewUrlParser: true , useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
